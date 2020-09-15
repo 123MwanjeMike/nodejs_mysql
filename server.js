@@ -11,9 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Mike's MySQL DB API." });
+  res.json({ message: "Welcome to my application." });
 });
 
+require("./routes/customer.routes.js")(app);
 // set port, listen for requests
 app.listen(3000, () => {
   console.log("Server is running on port 3000.");
