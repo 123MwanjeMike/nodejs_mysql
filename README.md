@@ -20,3 +20,10 @@ CREATE TABLE IF NOT EXISTS `customers` (
   active BOOLEAN DEFAULT false
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+
+4. Create a `.env` file with all the variables as listed in `./.env.example` and fill in their values respectively.
+
+5  Run the start script
+```
+npm run start
+```
