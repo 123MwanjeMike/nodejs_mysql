@@ -1,3 +1,5 @@
+# nodejs_mysql
+
 Run the SQL script below to create customers table:
 ```
 CREATE TABLE IF NOT EXISTS `customers` (
