@@ -4,7 +4,10 @@
   "description": "Node.js Restful CRUD API with Node.js, Express and MySQL",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server",
+    "prepare": "husky install",
+    "test": "newman run ./tests/Nodejs_mysql.postman_collection.json -e ./tests/Node_Mysql_Mock_Server.postman_environment.json"
   },
   "keywords": [
     "nodejs",
@@ -13,11 +16,19 @@
     "restapi"
   ],
   "author": "Mike Mwanje",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "dotenv": "^14.2.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
   }
 }
