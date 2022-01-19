@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server",
     "dev": "nodemon server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "newman run ./tests/Nodejs_mysql.postman_collection.json -e ./tests/Node_Mysql_Mock_Server.postman_environment.json"
   },
   "keywords": [
     "nodejs",
