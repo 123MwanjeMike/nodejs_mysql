@@ -1,11 +1,11 @@
 const sql = require('./db');
 
 // constructor
-const Customer = (customer) => {
+function Customer(customer) {
   this.email = customer.email;
   this.name = customer.name;
   this.active = customer.active;
-};
+}
 
 Customer.create = (newCustomer, result) => {
   sql.query('INSERT INTO customers SET ?', newCustomer, (err, res) => {
