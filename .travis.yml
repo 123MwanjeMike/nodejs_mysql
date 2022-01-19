@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '12.18.3'
+
+install:
+  - npm install newman
+
+before_script:
+  - node --version
+  - npm --version
+  - node_modules/.bin/newman --version
+
+script:
+  - node_modules/.bin/newman run https://api.getpostman.com/collections/12001378-c9e84814-2525-4e70-a5b0-cee542db7974?apikey=$KEY --environment https://api.getpostman.com/environments/12001378-9a74a172-b3cb-4d3c-bfd5-268e6089adff?apikey=$KEY
