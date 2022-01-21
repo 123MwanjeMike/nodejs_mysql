@@ -1,4 +1,5 @@
 # Nodejs with MySQL
+This is a demo mysql nodejs API for the tutorial [How to create a MySQL application on Heroku](https://autoidle.com/blog/how-to-create-a-my-sql-application-on-heroku) on [autoidle](https://github.com/autoidle)'s blog. The tutorial demonstrates how to deploy a mysql application on Heroku for free. 
 
 ## Setup
 
